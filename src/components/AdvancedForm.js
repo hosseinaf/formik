@@ -12,6 +12,15 @@ const AdvancedForm = () => {
             <option value="manager">Product Manager</option>
             <option value="other">Other</option>
       </select>
+
+      <div className="rule">
+        {/* <label></label> */}
+        <input className="check" type="checkbox" />
+        <span className="accept">I accept the term of service</span>
+  
+        
+      </div>
+
       <button>Submit</button>
     </form>
   );
