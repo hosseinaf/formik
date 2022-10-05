@@ -32,7 +32,7 @@ label{
  text-align: left;
  margin: 1rem 0 0.2rem;
 }
-input{
+input,select{
   width: 100%;
   padding: 0.65rem 0.5rem;
   font-size: 1rem;
@@ -46,9 +46,25 @@ input{
 
 }
 
-input:focus {
+input,select:focus {
  
   border-color: lightcoral ;
 }
 
+button{
+  display: block;
+  margin: 1rem 0;
+  padding: 0.35rem 0.5rem;
+  background-color: #4299e1;
+  width: 100%;
+  color: black;
+  margin-top: 1rem;
+  border: none;
+  color: #1a202c;
+  border: none;
+  border-radius: 3px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
  
