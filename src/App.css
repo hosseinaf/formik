@@ -1,38 +1,37 @@
-.App{
+.App {
   text-align: center;
   padding: 5rem 1rem;
 }
 
- nav{
-   display: flex;
-   align-items: center;
-   justify-content: center;
- }
-
- nav h3{
-   margin:1rem ;
-   color: #718096;
- }
-
- nav h3:hover{
-   color: #fff;
- }
-
-form{
-
- width:95% ;
- max-width:400px ; 
- margin: 0 auto;
- 
-} 
-label{
- font-size: 1rem;
- font-weight: bold;
- display: block;
- text-align: left;
- margin: 1rem 0 0.2rem;
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-input,select{
+
+nav h3 {
+  margin: 1rem;
+  color: #718096;
+}
+
+nav h3:hover {
+  color: #fff;
+}
+
+form {
+  width: 95%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+label {
+  font-size: 1rem;
+  font-weight: bold;
+  display: block;
+  text-align: left;
+  margin: 1rem 0 0.2rem;
+}
+input,
+select {
   width: 100%;
   padding: 0.65rem 0.5rem;
   font-size: 1rem;
@@ -41,17 +40,25 @@ input,select{
   background-color: #2d3748;
   border-radius: 10px;
   outline: none;
- 
- 
-
 }
 
-input,select:focus {
- 
-  border-color: lightcoral ;
+input:focus,
+select:focus {
+  border-color: #4299e1;
+}
+input::placeholder,
+select::placeholder {
+  color: #a0aec0;
 }
 
-button{
+.error {
+  color: #fc8181;
+  font-size: 0.75rem;
+  text-align: left;
+  margin-top: 0.25rem;
+}
+
+button {
   display: block;
   margin: 1rem 0;
   padding: 0.35rem 0.5rem;
@@ -67,21 +74,28 @@ button{
   font-weight: bold;
   cursor: pointer;
 }
- 
-.rule{
-  display:flex ;
+
+.rule {
+  display: flex;
   flex-direction: row;
-  
- 
 }
 
-.check{
-  width:15px ;
-  height:15px ;
-  margin-top:12px ;
-  margin-right:5px ;
+.check {
+  width: 15px;
+  height: 15px;
+  margin-top: 12px;
+  margin-right: 5px;
 }
 
-.accept{
-  margin-top:8px ;
+.accept {
+  margin-top: 8px;
+}
+
+input.input-error,
+select.input-error {
+  border-color: #fc8181;
+}
+
+button:disabled {
+  opacity: 0.35;
 }
